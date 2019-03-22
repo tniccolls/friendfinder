@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">
+          <span class="far fa-handshake"></span> FriendFinder
+          <span class="far fa-laugh"></span>
+        </h1>
+        <hr />
+        <h2 class="text-center">
+          Answer the 10 questions below to find your new best friend!
+        </h2>
+        <br />
+        <h2 class="text-center">
+          A few Lord of the Rings characters are also included as possible matches.
+        </h2>
+        <br />
+        <div class="text-center">
+          <a href="/">
+            <button class="btn btn-lg btn-default">
+              <span class="fa fa-home"></span> Back to Home
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Reservation Page -->
+          <div class="card">
+            
+            <div class="card-body">
+              <form role="form">
+                <div class="form-group">
+                  <label for="reserve-name">Name</label>
+                  <input type="text" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="reserve-phone">Picture URL</label>
+                  <input type="text" class="form-control" id="image" />
+                </div>
+                <div class="card-header">
+                  Rate your prefences for the following on a scale of 1 (strongly disagree) to 5 (strongly agree).
+                </div>
+                <div class="form-group" id="q1">
+                  <!-- Question 1 -->
+                  <label for="reserve-name"
+                    >Q1: I love wandering in forests and woods.
+                  </label>
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q1inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q1inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q1inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >3
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q1inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >4
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q1inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5"
+                      >5
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="form-group">
+                  <label for="reserve-phone"
+                    >Q2: I love verbal spars, and could play mind games with
+                    trolls until the sun comes up.</label
+                  >
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q2inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q2inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q2inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >3
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q2inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >4
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q2inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5"
+                      >5
+                    </label>
+                  </div>
+                </div>
+
+                <!-- New Q -->
+                <div class="form-group">
+                  <label for="reserve-phone"
+                    >Q3: I'm something of a pyromaniac, and love creating and
+                    watching fireworks.</label
+                  >
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q3inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q3inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q3inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >3
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q3inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >4
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q3inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5"
+                      >5
+                    </label>
+                  </div>
+                </div>
+
+                <!-- New Q -->
+                <div class="form-group">
+                  <label for="reserve-phone"
+                    >Q4: I prefer quiet times of study to wild action
+                    adventures.
+                  </label>
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q4inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q4inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q4inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >3
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q4inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >4
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q4inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5"
+                      >5
+                    </label>
+                  </div>
+                </div>
+
+                <!-- New Q -->
+                <div class="form-group">
+                  <label for="reserve-phone"
+                    >Q5: If under attack by a Balrog, I would sacrifice myself
+                    to buy time for my friends to flee.</label
+                  >
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q5inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q5inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q5inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >3
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q5inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >4
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q5inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5"
+                      >5
+                    </label>
+                  </div>
+                </div>
+
+                <!-- New Q -->
+                <div class="form-group">
+                  <label for="reserve-phone">Q6: I love jewlry.</label>
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q6inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q6inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q6inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >3
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q6inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >4
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q6inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5"
+                      >5
+                    </label>
+                  </div>
+                </div>
+
+                <!-- New Q -->
+                <div class="form-group">
+                  <label for="reserve-phone"
+                    >Q7: People don't come to me for advice, because I will say
+                    both "yes" and "no".
+                  </label>
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q7inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q7inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q7inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >3
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q7inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >4
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q7inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5"
+                      >5
+                    </label>
+                  </div>
+                </div>
+
+                <!-- New Q -->
+                <div class="form-group">
+                  <label for="reserve-phone"
+                    >Q8: I feel at home under the earth, be it in caves,
+                    caverns, or hobbit holes.
+                  </label>
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q8inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q8inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q8inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >3
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q8inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >4
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q8inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5"
+                      >5
+                    </label>
+                  </div>
+                </div>
+
+                <!-- New Q -->
+                <div class="form-group">
+                  <label for="reserve-phone"
+                    >Q9: I prefer warm climates.
+                  </label>
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q9inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q9inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q9inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >3
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q9inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >4
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q9inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5"
+                      >5
+                    </label>
+                  </div>
+                </div>
+
+                <!-- New Q -->
+                <div class="form-group">
+                  <label for="reserve-phone"
+                    >Q10: What would be your weapon of choice?</label
+                  >
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q10inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >1: A Magic Staff</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q10inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2"
+                      >2: A Bow and Arrows</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q10inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >3: A Sword
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q10inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >4: An Axe
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Q10inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5"
+                      >5: A Hammer
+                    </label>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h4>New Best Friend</h4>
+      </div>
+      <div class="card-body">
+        <ul id="friendList" class="list-group"></ul>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function runTableQuery(surveyscores) {
+        $.ajax({ url: "/api/friendlist", method: "GET" }).then(function(
+          friendData
+        ) {
+          console.log(friendData);
+          console.log("------------------------------------");
+          var bestMatchValue = 1000;
+          var bestMatchIndex = 1;
+          var totalDiff = [];
+          for (var i = 0; i < friendData.length - 1; i++) {
+            totalDiff[i] = 0;
+            for (var j = 0; j < 10; j++) {
+              totalDiff[i] =
+                totalDiff[i] +
+                Math.abs(surveyscores[j] - friendData[i].scores[j]);
+            }
+            if (totalDiff[i] < bestMatchValue) {
+              bestMatchValue = totalDiff[i];
+              bestMatchIndex = i;
+            }
+          }
+          console.log(totalDiff);
+          console.log(bestMatchValue, friendData[bestMatchIndex]);
+
+          var friendList = $("#friendList");
+
+          var listItem = $("<li class='list-group-item mt-4'>");
+
+          listItem.append(
+            $("<h2>").text("Best Match: "),
+            $("<hr>"),
+            $("<h2>").text("Name: " + friendData[bestMatchIndex].name),
+            $("<img />", { src: friendData[bestMatchIndex].picture }),
+            $("<h2>").text("Scores: " + friendData[bestMatchIndex].scores)
+          );
+
+          friendList.append(listItem);
+        });
+      }
+
+      $(".submit").on("click", function(event) {
+        event.preventDefault();
+
+        var surveyscores = [];
+
+        var radios = document.getElementsByName("Q1inlineRadioOptions");
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            surveyscores.push(Number(radios[i].value));
+          }
+        }
+        radios = document.getElementsByName("Q2inlineRadioOptions");
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            surveyscores.push(Number(radios[i].value));
+          }
+        }
+        radios = document.getElementsByName("Q3inlineRadioOptions");
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            surveyscores.push(Number(radios[i].value));
+          }
+        }
+        radios = document.getElementsByName("Q4inlineRadioOptions");
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            surveyscores.push(Number(radios[i].value));
+          }
+        }
+        radios = document.getElementsByName("Q5inlineRadioOptions");
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            surveyscores.push(Number(radios[i].value));
+          }
+        }
+        radios = document.getElementsByName("Q6inlineRadioOptions");
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            surveyscores.push(Number(radios[i].value));
+          }
+        }
+        radios = document.getElementsByName("Q7inlineRadioOptions");
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            surveyscores.push(Number(radios[i].value));
+          }
+        }
+        radios = document.getElementsByName("Q8inlineRadioOptions");
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            surveyscores.push(Number(radios[i].value));
+          }
+        }
+        radios = document.getElementsByName("Q9inlineRadioOptions");
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            surveyscores.push(Number(radios[i].value));
+          }
+        }
+        radios = document.getElementsByName("Q10inlineRadioOptions");
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            surveyscores.push(Number(radios[i].value));
+          }
+        }
+        console.log(surveyscores);
+        // Here we grab the form elements
+        var newFriend = {
+          name: $("#name")
+            .val()
+            .trim(),
+          picture: $("#image")
+            .width(300)
+            .height(300)
+            .val()
+            .trim(),
+          scores: surveyscores
+        };
+
+        $.post("/api/friendlist", newFriend, function(data) {});
+
+        runTableQuery(surveyscores);
+      });
+    </script>
+  </body>
+</html>
