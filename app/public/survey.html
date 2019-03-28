@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Document</title>
+    <title>Survey Time!</title>
   </head>
   <body>
     <div class="container">
@@ -391,7 +391,7 @@
 
                 <!-- New Q -->
                 <div class="form-group">
-                  <label for="reserve-phone">Q6: I love jewlry.</label>
+                  <label for="reserve-phone">Q6: I love jewelry.</label>
                   <br />
                   <div class="form-check form-check-inline">
                     <input
@@ -765,7 +765,7 @@
             $("<h2>").text("Best Match: "),
             $("<hr>"),
             $("<h2>").text("Name: " + friendData[bestMatchIndex].name),
-            $("<img />", { src: friendData[bestMatchIndex].picture }),
+            $("<img />", { src: friendData[bestMatchIndex].picture }),//.width(300).height(300) if i want to keep pictures small
             $("<h2>").text("Scores: " + friendData[bestMatchIndex].scores)
           );
 
@@ -845,8 +845,6 @@
             .val()
             .trim(),
           picture: $("#image")
-            .width(300)
-            .height(300)
             .val()
             .trim(),
           scores: surveyscores

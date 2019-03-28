@@ -1,8 +1,8 @@
 var friendArray = [
     {
         name: "Thor son of Odin",
-        picture: "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/11/03/104819285-thor.1910x1000.jpg",
-        scores: [2, 1, 4, 1, 3, 1, 1, 2, 2, 5]
+        picture: "https://static.tvtropes.org/pmwiki/pub/images/mcu_thor.png",
+        scores: [2, 1, 4, 1, 3, 4, 1, 2, 2, 5]
     },
     {
         name: "Bilbo Baggins",
@@ -38,9 +38,17 @@ var friendArray = [
         name: "Theoden",
         picture: "https://vignette.wikia.nocookie.net/lotr/images/1/13/King_Theoden_1.jpg/revision/latest?cb=20150313135224",
         scores: [3, 2, 2, 2, 3, 4, 1, 3, 3, 3]
+    },
+    {
+        name: "Boromir",
+        picture: "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/p-the-lord-of-the-rings-sean-bean.jpg",
+        scores: [2, 1, 4, 1, 3, 4, 1, 2, 2, 4]
+    },
+    {
+        name: "Samwise Gamgee",
+        picture: "https://vignette.wikia.nocookie.net/lotr/images/2/20/Sam.jpg/revision/latest?cb=20070623123241",
+        scores: [4, 2, 4, 4, 5, 1, 2, 4, 4, 3]
     }
 ];
 
 module.exports = friendArray;
-
-//https://vignette.wikia.nocookie.net/lotr/images/2/20/Sam.jpg/revision/latest?cb=20070623123241
